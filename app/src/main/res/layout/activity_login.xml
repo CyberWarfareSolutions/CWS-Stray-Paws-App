@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/RegisterBtn"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#F7941C"
+        android:text="@string/register"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CancelBtn"
+        app:layout_constraintVertical_bias="0.978"
+        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="#F7941C"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginBtn"
+        app:layout_constraintVertical_bias="0.761"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/CancelBtn"
+        android:layout_width="106dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="184dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#F7941C"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/LoginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPassword"
+        app:layout_constraintVertical_bias="0.736"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="106dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="96dp"
+
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#F7941C"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPassword"
+        app:layout_constraintVertical_bias="0.374"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/LoginPassword"
+        android:layout_width="310dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="288dp"
+        android:background="@drawable/textborder"
+        android:drawableLeft="@drawable/password"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textAlignment="center"
+
+        android:textColorHint="#F7941C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginEmail"
+        app:layout_constraintVertical_bias="0.684"
+        tools:ignore="Autofill,RtlHardcoded,RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/LoginEmail"
+        android:layout_width="312dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="436dp"
+        android:background="@drawable/textborder"
+        android:drawableLeft="@drawable/email"
+        android:hint="@string/e_mail_address"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:textAlignment="center"
+
+        android:textColorHint="#F7941C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeading"
+        app:layout_constraintVertical_bias="0.755"
+        tools:ignore="Autofill,RtlHardcoded,RtlSymmetry,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="#F7941C"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="276dp"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AdoptActivity">
+
+
+        <RelativeLayout
+            android:layout_width="411dp"
+            android:layout_height="733dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="411dp"
+                android:layout_height="333dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/adoptdog3"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-2dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="340dp"
+                android:text="Adopting a pet from Stray Paws is a profoundly rewarding choice that offers a deserving animal a second chance at life while enriching your own. Each adoption creates a heartwarming bond that goes beyond companionship, as you provide a safe haven for a once-homeless pet to thrive and share unconditional love."
+                android:textAlignment="center"
+                android:textColor="#F7941C"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="117dp"
+                android:layout_height="111dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="510dp"
+                android:background="@drawable/textborder"
+                android:padding="5dp"
+                app:srcCompat="@drawable/dog1" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="470dp"
+                android:text="Pets available for adoption:"
+                android:textAlignment="center"
+                android:textColor="#F7941C"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="117dp"
+                android:layout_height="111dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="510dp"
+                android:background="@drawable/textborder"
+                android:padding="5dp"
+                app:srcCompat="@drawable/dog2" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="117dp"
+                android:layout_height="111dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="510dp"
+                android:background="@drawable/textborder"
+                android:padding="5dp"
+                app:srcCompat="@drawable/dog4" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="355dp"
+                android:layout_height="53dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="360dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bottom_background"
+                android:elevation="2dp"
+                app:itemIconSize="30dp"
+                app:itemIconTint="@drawable/item_selector"
+                app:itemRippleColor="@android:color/transparent"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/bottom_menu" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

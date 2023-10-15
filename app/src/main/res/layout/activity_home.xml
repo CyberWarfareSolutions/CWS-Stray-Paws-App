@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".HomeActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931"
+        app:menu="@menu/bottom_menu"/>
+
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="730dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="411dp"
+            android:layout_height="234dp"
+            app:srcCompat="@drawable/pomeranian2"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-2dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#F7941C"
+            android:text="Adopt"
+            android:textSize="10dp"
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#F7941C"
+            android:text="Donate"
+            android:textSize="10dp"
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck"/>
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="373dp"
+            android:layout_height="251dp"
+            android:layout_marginTop="250dp"
+            app:srcCompat="@drawable/dottedtwo"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="280dp"
+            android:text="Who are we?"
+            android:textAlignment="center"
+            android:textColor="#F7941C"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="30dp"
+            android:text="Stray Paws Animal Shelter is a compassionate haven dedicated to rescuing and providing sanctuary for stray, abandoned, and neglected animals. Nestled in a serene natural setting, Stray Paws offers a temporary home for these vulnerable creatures, where they receive much-needed care, nourishment, and medical attention."
+            android:textAlignment="center"
+            android:textColor="#F7941C"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="390dp"
+            app:srcCompat="@drawable/timer"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our History"
+            android:textAlignment="center"
+            android:textColor="#F7941C"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck"
+            android:layout_marginTop="430dp"
+            android:layout_marginLeft="43dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/checklist"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="390dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/values"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="390dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Impact"
+            android:textAlignment="center"
+            android:textColor="#F7941C"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck"
+            android:layout_marginTop="430dp"
+            android:layout_marginLeft="183dp"/>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Values"
+            android:textAlignment="center"
+            android:textColor="#F7941C"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck"
+            android:layout_marginTop="430dp"
+            android:layout_marginLeft="313dp"/>
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="201dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="500dp"
+            app:srcCompat="@drawable/dottedtwo" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="505dp"
+            android:text="Why you should volunteer?"
+            android:textAlignment="center"
+            android:textColor="#F7941C"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="523dp"
+            android:text="Volunteering for Stray Paws is a unique opportunity to make a tangible and positive difference in the lives of vulnerable animals and the community at large.          SignUp Link: www.straypaws.com"
+            android:textAlignment="center"
+            android:textColor="#F7941C"
+            android:textSize="10dp"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="195dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="500dp"
+            app:srcCompat="@drawable/dottedtwo" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="96dp"
+            android:layout_height="89dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="510dp"
+            app:srcCompat="@drawable/logo" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
